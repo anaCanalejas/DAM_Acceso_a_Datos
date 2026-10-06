@@ -122,6 +122,17 @@ public class MuestraInformacionDir {
 
         Path fich = Path.of(ruta);
 
+        // Mostrar desde dónde se ejecuta el programa.
+        System.out.println(
+            "Directorio de trabajo: "
+            + Path.of(".").toAbsolutePath().normalize()
+        );
+
+        // Mostrar la ruta completa que vamos a analizar.
+        System.out.println(
+            "Ruta que vamos a analizar: "
+            + fich.toAbsolutePath().normalize()
+        );
 
 
         // ============================================================
